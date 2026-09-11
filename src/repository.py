@@ -16,4 +16,7 @@ class CustomerRepository:
         customer = self.get(customer_id) 
         if customer is None: 
             raise ValueError("customer-not-found") 
-        return customer 
+        from src.customer import update_customer_email
+        updated_customer = update_customer_email(customer, new_email, updated_by)
+        self.save(updated_customer)
+        return updated_customer
