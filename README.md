@@ -6,3 +6,6 @@ Small Python module for managing customer records.
  
 ## Run tests 
 pytest
+
+![alt text](image-1.png)
+![alt text](image.png)
